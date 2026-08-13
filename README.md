@@ -2,7 +2,7 @@
 
 **Free Online Calculators & Tools Platform**
 
-A Next.js 15 application featuring 30+ calculator tools for finance, agriculture, construction, and health. Built for speed, SEO optimization, and monetization with Google AdSense.
+A Next.js 15 application featuring 45+ calculator tools for finance, agriculture, construction, and health. Built for speed, SEO optimization, and monetization with Google AdSense.
 
 **Website:** https://toolswonder.com
 
