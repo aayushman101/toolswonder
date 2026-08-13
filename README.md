@@ -8,7 +8,7 @@ A Next.js 15 application featuring 45+ calculator tools for finance, agriculture
 
 ## Features
 
-- 🧮 **30+ Calculator Tools** - Finance, agriculture, construction, health calculators
+- 🧮 **45+ Calculator Tools** - Finance, agriculture, construction, health calculators
 - 🔍 **SEO Optimized** - JSON-LD schemas, meta tags, structured data
 - 🎨 **Dark/Light Theme** - Built-in theme switcher with next-themes
 - 📱 **Mobile Responsive** - Tailwind CSS responsive design
