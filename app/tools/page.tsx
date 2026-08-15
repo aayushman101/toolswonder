@@ -3,12 +3,13 @@ import Link from "next/link";
 import { tools, categories } from "@/lib/tools/registry";
 import { TrendingUp, Sprout, Grid3x3, Calculator } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "All Free Online Tools – Calculators, Converters & More",
-  description:
-    "Browse 45+ free online calculators for finance, agriculture, construction, electrical, HVAC, and import/tariff planning. Inflation, fertilizer, tile, mortgage, tariff — all free.",
-  alternates: { canonical: "https://toolswonder.com/tools" },
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: "All Free Online Tools – Calculators, Converters & More",
+    description: `Browse ${tools.length}+ free online calculators for finance, agriculture, construction, electrical, HVAC, automotive, and import/tariff planning. Inflation, fertilizer, tile, mortgage, tariff, EV charging — all free.`,
+    alternates: { canonical: "https://toolswonder.com/tools" },
+  };
+}
 
 const toolIcons: Record<string, React.ReactNode> = {
   "inflation-calculator": <TrendingUp className="h-5 w-5" />,

@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ThemeProvider from "@/components/layout/ThemeProvider";
 import AdSenseScript from "@/components/ads/AdSenseScript";
+import { tools } from "@/lib/tools/registry";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,72 +13,74 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://toolswonder.com"),
-  title: {
-    default: "ToolsWonder – Free Online Calculators, Converters & Tools",
-    template: "%s | ToolsWonder",
-  },
-  description:
-    "Free online calculators and tools for finance, agriculture, construction, and more. Accurate results, expert formulas, always free. No signup required.",
-  keywords: [
-    "online calculator",
-    "free tools",
-    "inflation calculator",
-    "fertilizer calculator",
-    "tile calculator",
-    "unit converter",
-    "finance tools",
-    "construction calculator",
-  ],
-  authors: [{ name: "ToolsWonder" }],
-  creator: "ToolsWonder",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://toolswonder.com",
-    siteName: "ToolsWonder",
-    title: "ToolsWonder – Free Online Calculators, Converters & Tools",
+export function generateMetadata(): Metadata {
+  const toolCount = tools.length;
+  return {
+    metadataBase: new URL("https://toolswonder.com"),
+    title: {
+      default: "ToolsWonder – Free Online Calculators, Converters & Tools",
+      template: "%s | ToolsWonder",
+    },
     description:
-      "1000+ free online tools for finance, agriculture, construction, health, and more.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "ToolsWonder - One Place for Every Useful Tool",
-      },
+      "Free online calculators and tools for finance, agriculture, construction, and more. Accurate results, expert formulas, always free. No signup required.",
+    keywords: [
+      "online calculator",
+      "free tools",
+      "inflation calculator",
+      "fertilizer calculator",
+      "tile calculator",
+      "unit converter",
+      "finance tools",
+      "construction calculator",
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ToolsWonder – Free Online Calculators & Tools",
-    description: "1000+ free online tools for every need.",
-    images: ["/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: "ToolsWonder" }],
+    creator: "ToolsWonder",
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: "https://toolswonder.com",
+      siteName: "ToolsWonder",
+      title: "ToolsWonder – Free Online Calculators, Converters & Tools",
+      description: `${toolCount}+ free online tools for finance, agriculture, construction, health, and more.`,
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "ToolsWonder - One Place for Every Useful Tool",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "ToolsWonder – Free Online Calculators & Tools",
+      description: `${toolCount}+ free online tools for every need.`,
+      images: ["/og-image.png"],
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', type: 'image/png' },
-      { url: '/icon', type: 'image/png', sizes: '32x32' },
-    ],
-    shortcut: '/favicon.ico',
-    apple: [{ url: '/apple-icon', sizes: '180x180', type: 'image/png' }],
-  },
-  verification: {
-    google: "a6b7Ncm9HJyoPbAed9CNdAaY6D18tPp653WHn802sm8",
-  },
-};
+    icons: {
+      icon: [
+        { url: '/favicon.ico', type: 'image/png' },
+        { url: '/icon', type: 'image/png', sizes: '32x32' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: [{ url: '/apple-icon', sizes: '180x180', type: 'image/png' }],
+    },
+    verification: {
+      google: "a6b7Ncm9HJyoPbAed9CNdAaY6D18tPp653WHn802sm8",
+    },
+  };
+}
 
 export default function RootLayout({
   children,

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+import { tools, categories } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
   title: "About ToolsWonder – Free Online Calculators",
@@ -59,7 +60,7 @@ export default function About() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Our Tools</h2>
           <p className="text-gray-600 dark:text-gray-400">
-            We offer 45+ calculators across multiple categories including Finance, Agriculture, Construction, and Health. Each tool is designed with precision and user experience in mind.
+            We offer {tools.length}+ calculators across {categories.length} categories including Finance, Agriculture, Construction, Automotive, Trade &amp; Import, and Health. Each tool is designed with precision and user experience in mind.
           </p>
         </section>
 
