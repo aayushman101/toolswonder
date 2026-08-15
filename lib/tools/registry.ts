@@ -402,6 +402,18 @@ export const tools: Tool[] = [
     isFeatured: true,
   },
   {
+    slug: "real-estate-commission-calculator",
+    title: "Real Estate Commission Calculator",
+    description: "Calculate listing and buyer's agent commission, net proceeds to seller, and agent take-home after brokerage split. Includes a general sales commission calculator.",
+    category: "Finance",
+    categorySlug: "finance",
+    icon: "DollarSign",
+    color: "blue",
+    keywords: ["real estate commission calculator", "realtor commission calculator", "real estate agent commission calculator", "commission calculator", "sales commission calculator"],
+    isNew: true,
+    isFeatured: true,
+  },
+  {
     slug: "mortgage-calculator",
     title: "Mortgage Calculator",
     description: "Calculate monthly mortgage payments including principal, interest, property tax, insurance, PMI, and HOA fees with full amortization breakdown.",

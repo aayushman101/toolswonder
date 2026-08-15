@@ -72,9 +72,9 @@ export default function EMICalculatorPage() {
               <ul className="space-y-3 text-sm">
                 {[
                   { title: "Mortgage Calculator", href: "/tools/mortgage-calculator" },
+                  { title: "Real Estate Commission Calculator", href: "/tools/real-estate-commission-calculator" },
                   { title: "SIP Calculator", href: "/tools/sip-calculator" },
                   { title: "Inflation Calculator", href: "/tools/inflation-calculator" },
-                  { title: "Salary Inflation Calculator", href: "/tools/salary-inflation-calculator" },
                 ].map((t) => (
                   <li key={t.href}>
                     <Link href={t.href} className="flex items-center gap-2 text-blue-700 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300">

@@ -64,6 +64,7 @@ const faqs = [
 ];
 
 const relatedTools = [
+  { title: "Real Estate Commission Calculator", href: "/tools/real-estate-commission-calculator", desc: "Agent commission and net proceeds when selling" },
   { title: "EMI Calculator", href: "/tools/emi-calculator", desc: "Home, car, and personal loan EMI" },
   { title: "SIP Calculator", href: "/tools/sip-calculator", desc: "Systematic Investment Plan returns" },
   { title: "Inflation Calculator", href: "/tools/inflation-calculator", desc: "Adjust money for inflation over time" },
