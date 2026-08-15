@@ -570,6 +570,18 @@ export const tools: Tool[] = [
     isFeatured: true,
   },
   {
+    slug: "ev-charging-cost-calculator",
+    title: "EV Charging Cost Calculator",
+    description: "Calculate EV charging cost across 18 countries (USA, China, Russia, EU top 10, Japan, South Korea, Canada, Australia, India, Brazil), home vs public charging, and compare against an equivalent gas car.",
+    category: "Automotive",
+    categorySlug: "automotive",
+    icon: "Car",
+    color: "green",
+    keywords: ["ev charging cost calculator", "ev charging cost calculator vs gas", "home ev charging cost calculator", "electric car charging cost calculator"],
+    isNew: true,
+    isFeatured: true,
+  },
+  {
     slug: "wire-gauge-calculator",
     title: "Wire Gauge Calculator",
     description: "Calculate the correct AWG wire gauge for electrical circuits. Based on current (amps), voltage, and distance. Supports 12V, 24V, 120V, 240V systems.",
@@ -647,6 +659,14 @@ export const categories: Category[] = [
     icon: "Ship",
     color: "blue",
     tools: tools.filter((t) => t.categorySlug === "trade"),
+  },
+  {
+    slug: "automotive",
+    title: "Automotive",
+    description: "Calculators for EV charging cost, fuel savings, and vehicle running costs.",
+    icon: "Car",
+    color: "green",
+    tools: tools.filter((t) => t.categorySlug === "automotive"),
   },
 ];
 

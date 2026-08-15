@@ -215,9 +215,9 @@ export default function ElectricalLoadCalculatorPage() {
               <h3 className="mb-3 font-semibold text-gray-900 dark:text-gray-100">Related Tools</h3>
               <div className="space-y-2">
                 {[
+                  { href: "/tools/ev-charging-cost-calculator", label: "EV Charging Cost Calculator" },
+                  { href: "/tools/wire-gauge-calculator", label: "Wire Gauge Calculator" },
                   { href: "/tools/tile-calculator", label: "Tile Calculator" },
-                  { href: "/tools/brick-calculator", label: "Brick Calculator" },
-                  { href: "/tools/paint-calculator", label: "Paint Calculator" },
                   { href: "/tools/emi-calculator", label: "EMI Calculator" },
                 ].map((t) => (
                   <Link

@@ -25,6 +25,7 @@ import {
   TreePine,
   Wind,
   Ship,
+  Car,
 } from "lucide-react";
 import { tools, categories } from "@/lib/tools/registry";
 
@@ -44,6 +45,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   TreePine,
   Wind,
   Ship,
+  Car,
 };
 
 function DynamicIcon({ name, className }: { name: string; className?: string }) {
