@@ -190,6 +190,7 @@ export default function Page() {
               <h3 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Related Tools</h3>
               <div className="space-y-2">
                 {[
+                  { title: "Renovation Cost Calculator", slug: "renovation-cost-calculator" },
                   { title: "Roofing Calculator", slug: "roofing-calculator" },
                   { title: "Concrete Calculator", slug: "concrete-calculator" },
                 ].map((tool) => (

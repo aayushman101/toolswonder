@@ -63,6 +63,7 @@ const faqs = [
 ];
 
 const relatedTools = [
+  { title: "Renovation Cost Calculator", href: "/tools/renovation-cost-calculator", desc: "Total cost estimate by room type" },
   { title: "Paint Calculator", href: "/tools/paint-calculator", desc: "Litres of paint for any room" },
   { title: "Insulation Calculator", href: "/tools/insulation-calculator", desc: "Batts, rolls, and bags needed" },
   { title: "Lumber Calculator", href: "/tools/lumber-calculator", desc: "Board feet for framing and joists" },

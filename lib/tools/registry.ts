@@ -287,6 +287,18 @@ export const tools: Tool[] = [
     isNew: true,
   },
   {
+    slug: "renovation-cost-calculator",
+    title: "Renovation Cost Calculator",
+    description: "Estimate kitchen, bathroom, whole house, basement, or room renovation cost by square footage, finish quality, and region, with a materials vs labor breakdown.",
+    category: "Construction",
+    categorySlug: "construction",
+    icon: "Home",
+    color: "orange",
+    keywords: ["renovation cost calculator", "home renovation cost calculator", "kitchen renovation cost calculator", "bathroom renovation cost calculator", "whole house renovation cost calculator"],
+    isNew: true,
+    isFeatured: true,
+  },
+  {
     slug: "tile-calculator",
     title: "Tile Calculator",
     description: "Calculate tiles, grout, and materials needed for floor, wall, shower, ceiling, or backsplash tiling projects.",

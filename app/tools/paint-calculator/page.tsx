@@ -70,10 +70,10 @@ export default function PaintCalculatorPage() {
               <h3 className="mb-3 font-semibold text-gray-900 dark:text-gray-100">Related Construction Tools</h3>
               <ul className="space-y-3 text-sm">
                 {[
+                  { title: "Renovation Cost Calculator", href: "/tools/renovation-cost-calculator" },
                   { title: "Tile Calculator", href: "/tools/tile-calculator" },
                   { title: "Drywall Calculator", href: "/tools/drywall-calculator" },
                   { title: "Brick Calculator", href: "/tools/brick-calculator" },
-                  { title: "Concrete Calculator", href: "/tools/concrete-calculator" },
                 ].map((t) => (
                   <li key={t.href}>
                     <Link href={t.href} className="flex items-center gap-2 text-orange-700 dark:text-orange-400 hover:text-orange-900 dark:hover:text-orange-300">
