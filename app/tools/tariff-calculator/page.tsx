@@ -79,8 +79,8 @@ const faqs = [
 ];
 
 const relatedTools = [
+  { title: "Sales Tax Calculator", href: "/tools/sales-tax-calculator", desc: "Add or reverse calculate US sales tax" },
   { title: "Inflation Calculator", href: "/tools/inflation-calculator", desc: "Adjust money for inflation over time" },
-  { title: "Inflation Calculator India", href: "/tools/inflation-calculator-india", desc: "Rupee purchasing power over time" },
   { title: "Mortgage Calculator", href: "/tools/mortgage-calculator", desc: "Monthly home loan payment" },
 ];
 

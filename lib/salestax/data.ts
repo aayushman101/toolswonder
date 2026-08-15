@@ -1,0 +1,63 @@
+export interface StateTaxRate {
+  code: string;
+  name: string;
+  rate: number; // base state sales tax rate, %. Local/county/city taxes often add more.
+}
+
+// Base state-level sales tax rates. Many states permit additional local (county/city)
+// sales tax on top of this — use the "Local/Additional Tax" field for the combined rate.
+// States with 0 listed have no statewide sales tax (though some allow local option taxes).
+export const stateTaxRates: StateTaxRate[] = [
+  { code: "AL", name: "Alabama", rate: 4.0 },
+  { code: "AK", name: "Alaska", rate: 0 },
+  { code: "AZ", name: "Arizona", rate: 5.6 },
+  { code: "AR", name: "Arkansas", rate: 6.5 },
+  { code: "CA", name: "California", rate: 7.25 },
+  { code: "CO", name: "Colorado", rate: 2.9 },
+  { code: "CT", name: "Connecticut", rate: 6.35 },
+  { code: "DE", name: "Delaware", rate: 0 },
+  { code: "DC", name: "District of Columbia", rate: 6.0 },
+  { code: "FL", name: "Florida", rate: 6.0 },
+  { code: "GA", name: "Georgia", rate: 4.0 },
+  { code: "HI", name: "Hawaii", rate: 4.0 },
+  { code: "ID", name: "Idaho", rate: 6.0 },
+  { code: "IL", name: "Illinois", rate: 6.25 },
+  { code: "IN", name: "Indiana", rate: 7.0 },
+  { code: "IA", name: "Iowa", rate: 6.0 },
+  { code: "KS", name: "Kansas", rate: 6.5 },
+  { code: "KY", name: "Kentucky", rate: 6.0 },
+  { code: "LA", name: "Louisiana", rate: 4.45 },
+  { code: "ME", name: "Maine", rate: 5.5 },
+  { code: "MD", name: "Maryland", rate: 6.0 },
+  { code: "MA", name: "Massachusetts", rate: 6.25 },
+  { code: "MI", name: "Michigan", rate: 6.0 },
+  { code: "MN", name: "Minnesota", rate: 6.875 },
+  { code: "MS", name: "Mississippi", rate: 7.0 },
+  { code: "MO", name: "Missouri", rate: 4.225 },
+  { code: "MT", name: "Montana", rate: 0 },
+  { code: "NE", name: "Nebraska", rate: 5.5 },
+  { code: "NV", name: "Nevada", rate: 6.85 },
+  { code: "NH", name: "New Hampshire", rate: 0 },
+  { code: "NJ", name: "New Jersey", rate: 6.625 },
+  { code: "NM", name: "New Mexico", rate: 4.875 },
+  { code: "NY", name: "New York", rate: 4.0 },
+  { code: "NC", name: "North Carolina", rate: 4.75 },
+  { code: "ND", name: "North Dakota", rate: 5.0 },
+  { code: "OH", name: "Ohio", rate: 5.75 },
+  { code: "OK", name: "Oklahoma", rate: 4.5 },
+  { code: "OR", name: "Oregon", rate: 0 },
+  { code: "PA", name: "Pennsylvania", rate: 6.0 },
+  { code: "RI", name: "Rhode Island", rate: 7.0 },
+  { code: "SC", name: "South Carolina", rate: 6.0 },
+  { code: "SD", name: "South Dakota", rate: 4.2 },
+  { code: "TN", name: "Tennessee", rate: 7.0 },
+  { code: "TX", name: "Texas", rate: 6.25 },
+  { code: "UT", name: "Utah", rate: 4.85 },
+  { code: "VT", name: "Vermont", rate: 6.0 },
+  { code: "VA", name: "Virginia", rate: 5.3 },
+  { code: "WA", name: "Washington", rate: 6.5 },
+  { code: "WV", name: "West Virginia", rate: 6.0 },
+  { code: "WI", name: "Wisconsin", rate: 5.0 },
+  { code: "WY", name: "Wyoming", rate: 4.0 },
+  { code: "CUSTOM", name: "Custom Rate", rate: 0 },
+];

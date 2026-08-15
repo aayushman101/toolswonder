@@ -546,6 +546,18 @@ export const tools: Tool[] = [
     isFeatured: true,
   },
   {
+    slug: "sales-tax-calculator",
+    title: "Sales Tax Calculator",
+    description: "Add sales tax to a price or reverse calculate the pre-tax price from a tax-included total, for all 50 US states with a local tax field.",
+    category: "Finance",
+    categorySlug: "finance",
+    icon: "DollarSign",
+    color: "blue",
+    keywords: ["sales tax calculator", "reverse sales tax calculator", "nj sales tax calculator", "sales tax calculator by state"],
+    isNew: true,
+    isFeatured: true,
+  },
+  {
     slug: "tariff-calculator",
     title: "Tariff Calculator",
     description: "Estimate US and EU customs duty, import VAT, and total landed cost by product category and country of origin. Includes de minimis thresholds.",
