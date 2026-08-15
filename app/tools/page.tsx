@@ -6,7 +6,7 @@ import { TrendingUp, Sprout, Grid3x3, Calculator } from "lucide-react";
 export const metadata: Metadata = {
   title: "All Free Online Tools – Calculators, Converters & More",
   description:
-    "Browse 3+ free online tools for finance, agriculture, construction, and more. Inflation calculator, fertilizer calculator, tile calculator — all free.",
+    "Browse 45+ free online calculators for finance, agriculture, construction, electrical, HVAC, and import/tariff planning. Inflation, fertilizer, tile, mortgage, tariff — all free.",
   alternates: { canonical: "https://toolswonder.com/tools" },
 };
 

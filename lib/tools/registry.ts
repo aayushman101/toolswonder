@@ -522,6 +522,18 @@ export const tools: Tool[] = [
     isFeatured: true,
   },
   {
+    slug: "tariff-calculator",
+    title: "Tariff Calculator",
+    description: "Estimate US and EU customs duty, import VAT, and total landed cost by product category and country of origin. Includes de minimis thresholds.",
+    category: "Trade & Import",
+    categorySlug: "trade",
+    icon: "Ship",
+    color: "blue",
+    keywords: ["tariff calculator", "import duty calculator", "import duty calculator usa", "eu import duty calculator", "customs duty calculator", "landed cost calculator"],
+    isNew: true,
+    isFeatured: true,
+  },
+  {
     slug: "wire-gauge-calculator",
     title: "Wire Gauge Calculator",
     description: "Calculate the correct AWG wire gauge for electrical circuits. Based on current (amps), voltage, and distance. Supports 12V, 24V, 120V, 240V systems.",
@@ -591,6 +603,14 @@ export const categories: Category[] = [
     icon: "Wind",
     color: "blue",
     tools: tools.filter((t) => t.categorySlug === "home-hvac"),
+  },
+  {
+    slug: "trade",
+    title: "Trade & Import",
+    description: "Calculators for import duty, tariffs, VAT, and landed cost for shipping into the US or EU.",
+    icon: "Ship",
+    color: "blue",
+    tools: tools.filter((t) => t.categorySlug === "trade"),
   },
 ];
 

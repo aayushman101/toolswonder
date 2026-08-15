@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import TDEECalculator from "@/components/tools/TDEECalculator";
 import JsonLd, { buildToolSchema, buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/JsonLd";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const BASE_URL = "https://toolswonder.com";
 const TOOL_URL = `${BASE_URL}/tools/tdee-calculator`;
@@ -47,6 +49,20 @@ export default function TDEECalculatorPage() {
                 <li>• Protein: 0.8-1g per lb of body weight</li>
                 <li>• Deficit 300-500 cal for steady loss</li>
                 <li>• Add strength training to preserve muscle</li>
+              </ul>
+            </div>
+            <div className="card p-5">
+              <h3 className="mb-3 font-semibold text-gray-900 dark:text-gray-100">Related Health Tools</h3>
+              <ul className="space-y-3 text-sm">
+                {[
+                  { title: "Perimenopause Age Calculator", href: "/tools/perimenopause-age-calculator" },
+                ].map((t) => (
+                  <li key={t.href}>
+                    <Link href={t.href} className="flex items-center gap-2 text-pink-700 dark:text-pink-400 hover:text-pink-900 dark:hover:text-pink-300">
+                      <ChevronRight className="h-3.5 w-3.5 shrink-0" /> {t.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </aside>

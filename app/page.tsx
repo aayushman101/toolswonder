@@ -19,7 +19,12 @@ import {
   ShieldCheck,
   ZapOff,
   Flame,
-  MousePointerClick
+  MousePointerClick,
+  Heart,
+  Home,
+  TreePine,
+  Wind,
+  Ship,
 } from "lucide-react";
 import { tools, categories } from "@/lib/tools/registry";
 
@@ -34,6 +39,11 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Globe,
   Zap,
   Star,
+  Heart,
+  Home,
+  TreePine,
+  Wind,
+  Ship,
 };
 
 function DynamicIcon({ name, className }: { name: string; className?: string }) {

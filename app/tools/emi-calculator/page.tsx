@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import EMICalculator from "@/components/tools/EMICalculator";
 import JsonLd, { buildToolSchema, buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/JsonLd";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const BASE_URL = "https://toolswonder.com";
 const TOOL_URL = `${BASE_URL}/tools/emi-calculator`;
@@ -64,6 +66,23 @@ export default function EMICalculatorPage() {
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="card p-5">
+              <h3 className="mb-3 font-semibold text-gray-900 dark:text-gray-100">Related Finance Tools</h3>
+              <ul className="space-y-3 text-sm">
+                {[
+                  { title: "Mortgage Calculator", href: "/tools/mortgage-calculator" },
+                  { title: "SIP Calculator", href: "/tools/sip-calculator" },
+                  { title: "Inflation Calculator", href: "/tools/inflation-calculator" },
+                  { title: "Salary Inflation Calculator", href: "/tools/salary-inflation-calculator" },
+                ].map((t) => (
+                  <li key={t.href}>
+                    <Link href={t.href} className="flex items-center gap-2 text-blue-700 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300">
+                      <ChevronRight className="h-3.5 w-3.5 shrink-0" /> {t.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </aside>
         </div>

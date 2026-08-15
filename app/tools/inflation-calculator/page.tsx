@@ -82,10 +82,11 @@ const faqs = [
 ];
 
 const relatedTools = [
+  { title: "Inflation Calculator India", href: "/tools/inflation-calculator-india", desc: "Rupee purchasing power with India CPI" },
+  { title: "Salary Inflation Calculator", href: "/tools/salary-inflation-calculator", desc: "Is your salary keeping up with inflation?" },
+  { title: "Future Value Inflation Calculator", href: "/tools/future-value-inflation-calculator", desc: "What you'll need in the future" },
+  { title: "Past Inflation Calculator", href: "/tools/past-inflation-calculator", desc: "What money was worth in any past year" },
   { title: "SIP Calculator", href: "/tools/sip-calculator", desc: "Systematic Investment Plan returns" },
-  { title: "FD Calculator", href: "/tools/fd-calculator", desc: "Fixed Deposit interest calculator" },
-  { title: "Retirement Calculator", href: "/tools/retirement-calculator", desc: "Plan your retirement corpus" },
-  { title: "Net Worth Calculator", href: "/tools/net-worth-calculator", desc: "Calculate your total net worth" },
 ];
 
 export default function InflationCalculatorPage() {

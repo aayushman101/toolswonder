@@ -3,6 +3,8 @@ import BrickCalculator from "@/components/tools/BrickCalculator";
 import JsonLd, { buildToolSchema, buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/JsonLd";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import AdUnit from "@/components/ads/AdUnit";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const BASE_URL = "https://toolswonder.com";
 const TOOL_URL = `${BASE_URL}/tools/brick-calculator`;
@@ -71,6 +73,23 @@ export default function BrickCalculatorPage() {
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="card p-5">
+              <h3 className="mb-3 font-semibold text-gray-900 dark:text-gray-100">Related Construction Tools</h3>
+              <ul className="space-y-3 text-sm">
+                {[
+                  { title: "Brick Calculator – Square Feet", href: "/tools/brick-calculator-square-feet" },
+                  { title: "Boundary Wall Brick Calculator", href: "/tools/boundary-wall-brick-calculator" },
+                  { title: "Concrete Calculator", href: "/tools/concrete-calculator" },
+                  { title: "Paver Brick Calculator", href: "/tools/paver-brick-calculator" },
+                ].map((t) => (
+                  <li key={t.href}>
+                    <Link href={t.href} className="flex items-center gap-2 text-orange-700 dark:text-orange-400 hover:text-orange-900 dark:hover:text-orange-300">
+                      <ChevronRight className="h-3.5 w-3.5 shrink-0" /> {t.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </aside>
         </div>

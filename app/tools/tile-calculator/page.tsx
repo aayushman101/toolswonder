@@ -80,7 +80,7 @@ const faqs = [
 
 const relatedTools = [
   { title: "Paint Calculator", href: "/tools/paint-calculator", desc: "Gallons of paint needed for any room" },
-  { title: "Cement Calculator", href: "/tools/cement-calculator", desc: "Concrete and cement quantities" },
+  { title: "Concrete Calculator", href: "/tools/concrete-calculator", desc: "Concrete bags for slabs and driveways" },
   { title: "Brick Calculator", href: "/tools/brick-calculator", desc: "Bricks and mortar estimator" },
   { title: "Flooring Calculator", href: "/tools/flooring-calculator", desc: "Hardwood, laminate, and carpet" },
 ];
